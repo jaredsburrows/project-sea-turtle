@@ -1,0 +1,23 @@
+language: ruby
+
+rvm:
+  - 2.3.0
+
+script:
+  - bundle exec jekyll build
+
+after_success:
+  - .buildscript/update.sh
+
+branches:
+  only:
+    - gh-pages
+
+sudo: false
+
+cache:
+  - bundler
+
+env:
+  global:
+    - secure: "H5gpQRtsxLwF/HyTjVo3jn8jYbeyx1kkjC0njzD7HZ1rb+djBgmp/k5HDD/vNVaiPsLzYEMRs9CeJUrX0Svs7XOxjqTD2nS0ntevRWEsB6PMQVJyGeIE63WCdFhObXT7ARRgn7ITQuZSt57lZ9d3MVzIrk2zHpDfkbh00uLy1tp1jATPhOMqh0igtdbJbKHq1P/fWQ7r0SWP3pgK5swhpAOhdia/DzAYQ9CAkDUm3CdBxYmxeF6LuNlLkgx3MQrSZmwtGYopiXbmC01JGxbfPOpF4p/F5A6yoFzbUSzp9pnODg8qPfwxBbj1V/YiZwB7Vfl6lm0ORP8rn5+GkbUT7rF+Oa46y5EGTmQM7ixt+uLf8LSE2Jql3i4er5K3fdPaU9xa6LF3mNzGJvLcMU47WRotyBTal4Yt4hjOF5OO5xW3htTKstI1zs1HO9Z8KMmoT6HhoJMJ+tghqi/8q6veRr21D3MADZawwvnvU/ZqGBU0X4aGjsl1xhG0jRjJQcCCOVpTEVEp4rEfqCIR2Zxmi/IefxuPhPpzjjk01vRGBoSHnbV2czIGBe3/goIMHygbJPr487u8zRCBqWoNky20pNrT18LuCsxdNkE88w6ELU6974kj8Qr7zr3ykjPkqOlHSJhC9AEVUSRebewk/G6ZoPP+ejacxblULlzqgrlDLp4="

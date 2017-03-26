@@ -1,0 +1,18 @@
+# Constants
+title: The Hill Report
+email: jaredsburrows@gmail.com
+description: "Simple facts for people on the go and in the know"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: "jaredsburrows"
+github_username:  "jaredsburrows"
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+exclude: [vendor]
