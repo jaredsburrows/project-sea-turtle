@@ -1,7 +1,7 @@
 # Constants
 title: The Hill Report
 email: jaredsburrows@gmail.com
-description: "Simple facts for people on the go and in the know"
+description: "Facts for people on the go and in the know"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: "jaredsburrows"

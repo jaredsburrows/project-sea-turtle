@@ -16,8 +16,6 @@ elif [ "$TRAVIS_BRANCH" != "$BRANCH" ]; then
 elif [ "$TRAVIS_OS_NAME" != "linux" ]; then
     echo "Skipping: wrong os. Expected 'osx' but was '$TRAVIS_OS_NAME'."
 elif [ "$TRAVIS_USERNAME" == "$COMMITTER_EMAIL" ]; then
-    echo "Skipping: was wrong user. Expected a different user but was '$TRAVIS_USERNAME'."
-else
     echo -e "Creating new posts...\n"
 
     # Setup environment
@@ -35,4 +33,6 @@ else
     git push -fq upstream gh-pages
 
     echo -e "Published new posts to gh-pages.\n"
+else
+    echo "Skipping: was wrong user. Expected a different user but was '$TRAVIS_USERNAME'."
 fi
