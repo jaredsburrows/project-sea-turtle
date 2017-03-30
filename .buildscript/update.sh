@@ -25,7 +25,7 @@ else
     git checkout gh-pages
 
     # Add new posts here
-    bundle exec jekyll post "My New Page $(date)"
+    thor jekyll:new
 
     # Push the new files up to GitHub
     git add .
