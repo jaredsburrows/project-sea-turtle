@@ -4,6 +4,8 @@ rvm:
   - 2.3.0
 
 script:
+  - gem install thor
+  - bundle install
   - bundle exec jekyll build
 
 after_success:
