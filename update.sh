@@ -11,10 +11,8 @@ elif [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     echo "Skipping: was pull request."
 elif [ "$TRAVIS_BRANCH" != "$BRANCH" ]; then
     echo "Skipping: wrong branch. Expected '$BRANCH' but was '$TRAVIS_BRANCH'."
-elif [ "$TRAVIS_OS_NAME" != "linux" ]; then
-    echo "Skipping: wrong os. Expected 'osx' but was '$TRAVIS_OS_NAME'."
-elif [ "$TRAVIS_EVENT_TYPE" != "cron" ]; then
-    echo "Skipping: wrong event. Expected 'cron' but was '$TRAVIS_EVENT_TYPE'."
+#elif [ "$TRAVIS_EVENT_TYPE" != "cron" ]; then
+#    echo "Skipping: wrong event. Expected 'cron' but was '$TRAVIS_EVENT_TYPE'."
 else
     echo -e "Creating new posts...\n"
 
@@ -29,7 +27,7 @@ else
 
     # Push the new files up to GitHub
     git add .
-    git commit -m "Updated posts at $(date)"
+    git commit -m "Updated news at $(date)"
     git push -fq upstream gh-pages
 
     echo -e "Published new posts to gh-pages.\n"
