@@ -19,7 +19,7 @@ class Jekyll < Thor
 
     title = title.gsub(" ", "-")
     date = Time.now.strftime("%Y-%m-%d")
-    filename = "../_posts/#{date}-#{title.to_url}.markdown"
+    filename = "./_posts/#{date}-#{title.to_url}.markdown"
 
     if File.exist?(filename)
       abort("#{filename} already exists!")

@@ -9,7 +9,7 @@ script:
   - bundle exec jekyll build
 
 after_success:
-  - .buildscript/update.sh
+  - update.sh
 
 branches:
   only:
