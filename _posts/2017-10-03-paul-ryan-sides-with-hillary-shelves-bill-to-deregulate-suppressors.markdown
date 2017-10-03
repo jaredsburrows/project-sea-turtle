@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paul Ryan Sides With Hillary Shelves Bill to Deregulate Suppressors
+title: Paul Ryan Sides with Hillary Shelves Bill to Deregulate Suppressors
 tags:
  -
 ---
