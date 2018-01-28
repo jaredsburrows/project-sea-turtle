@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fake News WIRED Magazine Presents Googles Racist Anticonservative Harassers as Victims Smears Breitbart
+title: Fake News WIRED Magazine Presents Googles Racist AntiConservative Harassers as Victims Smears Breitbart
 tags:
  -
 ---
