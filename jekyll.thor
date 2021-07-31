@@ -7,7 +7,7 @@ class Jekyll < Thor
   desc "new", "create a new post"
   method_option :editor, :default => "subl"
   def new()
-    url = "https://newsapi.org/v1/articles?source=breitbart-news&sortBy=top&apiKey=63c394c42ffd45afab11bb4928a4b879"
+    url = "https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=63c394c42ffd45afab11bb4928a4b879"
     uri = URI(url)
     response = Net::HTTP.get(uri)
     json = JSON.parse(response)
