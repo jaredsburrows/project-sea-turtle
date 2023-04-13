@@ -1,7 +1,8 @@
 # Constants
 title: "Burrows Report"
 description: "Facts for people on the go and in the know"
-url: "https://jaredsburrows.github.io/project-sea-turtle"
+#url: "https://jaredsburrows.github.io/project-sea-turtle"
+url: ""
 
 permalink: /:title/
 
