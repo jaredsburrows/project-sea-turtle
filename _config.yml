@@ -1,7 +1,9 @@
 # Constants
 title: "Burrows Report"
 description: "Facts for people on the go and in the know"
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jaredsburrows.github.io/project-sea-turtle"
+
+permalink: /:title/
 
 # Build settings
 markdown: kramdown
@@ -28,6 +30,8 @@ exclude:
   - 'node_modules'
   - 'scripts'
   - 'vendor'
+  - .editorconfig
+  - .gitignore
   - Gemfile
   - Gemfile.lock
   - package.json
@@ -35,3 +39,4 @@ exclude:
   - README.md
   - LICENSE.txt
   - CNAME
+  - jekyll.thor

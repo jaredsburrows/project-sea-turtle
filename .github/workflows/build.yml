@@ -3,7 +3,7 @@ name: build
 on:
   push:
     branches:
-      - gh-pages
+      - main
   pull_request:
     types: [ opened, labeled, unlabeled, synchronize ]
 
@@ -36,10 +36,19 @@ jobs:
           gem install thor
           bundle install
 
+      - name: Add new posts here
+        run: |
+          thor jekyll:new
+
       - name: Build the Project
         run: |
           bundle exec jekyll build
 
-      - name: Add new posts here
-        run: |
-          thor jekyll:new
+      - name: Publish Website
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        if: github.repository == 'jaredsburrows/project-sea-turtle' && github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          user_name: "Github Actions"
+          user_email: "action@github.com"
