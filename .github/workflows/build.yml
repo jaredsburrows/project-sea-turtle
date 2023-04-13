@@ -29,18 +29,17 @@ jobs:
           ruby-version: 3.1
           bundler-cache: true
 
-#      - name: Setup Bundler
-#        run: |
-#          gem install stringex
-#          gem install json
-#          gem install thor
-#          gem install bundler
-
       - name: Install Dependencies
         run: |
+          gem install stringex
+          gem install json
+          gem install thor
           bundle install
+
+      - name: Add new posts here
+        run: |
+          thor jekyll:new
 
       - name: Build the Project
         run: |
           bundle exec jekyll build
-
