@@ -8,7 +8,7 @@ markdown: kramdown
 
 theme: minima
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
 
@@ -21,7 +21,17 @@ disqus:
 
 google_analytics: UA-106769019-1
 
+include:
+  - '.well-known'
+
 exclude:
+  - 'node_modules'
+  - 'scripts'
+  - 'vendor'
   - Gemfile
   - Gemfile.lock
-  - vendor
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE.txt
+  - CNAME

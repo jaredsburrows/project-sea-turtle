@@ -36,10 +36,10 @@ jobs:
           gem install thor
           bundle install
 
-      - name: Add new posts here
-        run: |
-          thor jekyll:new
-
       - name: Build the Project
         run: |
           bundle exec jekyll build
+
+      - name: Add new posts here
+        run: |
+          thor jekyll:new

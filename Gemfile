@@ -1,13 +1,14 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "thor"
-gem "stringex"
-gem "minima"
+gem 'github-pages'
+gem 'jekyll'
+gem 'thor'
+gem 'stringex'
+gem 'minima'
 
 group :jekyll_plugins do
-   gem "jekyll-feed"
-   gem "jekyll-compose"
-   gem "jekyll-paginate"
-   gem "webrick"
+   gem 'jekyll-feed'
+   gem 'jekyll-compose'
+   gem 'jekyll-paginate'
+   gem 'webrick'
 end
