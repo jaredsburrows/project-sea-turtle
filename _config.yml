@@ -24,5 +24,4 @@ google_analytics: UA-106769019-1
 exclude:
   - Gemfile
   - Gemfile.lock
-exclude: [vendor]
-
+  - [vendor]
